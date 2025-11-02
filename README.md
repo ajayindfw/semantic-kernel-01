@@ -13,21 +13,22 @@ Local development (recommended)
 1. Use dotnet user-secrets:
 
 in project folder
-dotnet user-secrets init 
-dotnet user-secrets set "OPENAI_ENDPOINT" "https://your-endpoint" 
-dotnet user-secrets set "OPENAI_API_KEY" "your_api_key" 
-dotnet user-secrets set "OPENAI_DEPLOYMENT" "gpt-4.1-mini"
+
+	- dotnet user-secrets init 
+	- dotnet user-secrets set "OPENAI_ENDPOINT" "https://your-endpoint" 
+	- dotnet user-secrets set "OPENAI_API_KEY" "your_api_key" 
+	- dotnet user-secrets set "OPENAI_DEPLOYMENT" "gpt-4.1-mini"
 
 2. Or set session environment variables:
 - PowerShell:
-$env:OPENAI_ENDPOINT="https://your-endpoint" 
-$env:OPENAI_API_KEY="your_api_key" 
-$env:OPENAI_DEPLOYMENT="gpt-4.1-mini" dotnet run
+	- $env:OPENAI_ENDPOINT="https://your-endpoint" 
+	- $env:OPENAI_API_KEY="your_api_key" 
+	- $env:OPENAI_DEPLOYMENT="gpt-4.1-mini" dotnet run
 
 - Bash:
-export OPENAI_ENDPOINT="https://your-endpoint" 
-export OPENAI_API_KEY="your_api_key" 
-export OPENAI_DEPLOYMENT="gpt-4.1-mini" dotnet run
+	- export OPENAI_ENDPOINT="https://your-endpoint" 
+	- export OPENAI_API_KEY="your_api_key" 
+	- export OPENAI_DEPLOYMENT="gpt-4.1-mini" dotnet run
 
 3. Visual Studio debug (do not commit)
 Edit `Properties/launchSettings.json` and add environment variables to your profile for debugging only.
